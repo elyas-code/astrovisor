@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  html {
+    background-color: #121212;
+    font-family: "Proxima Nova", "Exo 2", system-ui, sans-serif; /* Add Exo 2 here */
+  }
+}
+input:focus {
+  transform: scale(1.05); /* Makes the input slightly larger */
+  box-shadow: 0 0 10px rgba(187, 134, 252, 0.5); /* Optional shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
